@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.quanminjieshui.waterindex">
+    package="com.jieshuizhibiao.waterindex">
 
     <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -15,14 +15,16 @@
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
 
 
     <application
-        android:name="com.quanminjieshui.waterindex.WaterIndexApplication"
+        android:name=".WaterIndexApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo3"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo3"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
@@ -40,7 +42,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.quanminjieshui.waterindex.fileProvider"
+            android:authorities="com.jieshuizhibiao.waterindex.fileProvider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -53,15 +55,20 @@
             android:name="com.alipay.sdk.app.H5PayActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="false"
-            android:screenOrientation="behind"/>
+            android:screenOrientation="behind" />
         <activity
             android:name="com.alipay.sdk.auth.AuthActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="false"
-            android:screenOrientation="behind"/>
+            android:screenOrientation="behind" />
         <!--alipay end -->
 
         <activity android:name=".ui.activity.TestActivity" />
+            <!--<intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter></activity>-->
 
         <activity
             android:name=".ui.activity.SplashActivity"
@@ -110,21 +117,7 @@
             android:name=".ui.activity.ChangePassActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.UserDetailActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.activity.EnterpriseActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.activity.OrderListsActivity"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name=".ui.activity.OrderDetailActivity"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name=".ui.activity.FactoryServiceActivity"
+            android:name=".ui.activity.UserInfoActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.AboutListActivity"
@@ -139,52 +132,70 @@
             android:name=".ui.activity.UserConfirmActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.UserMessageActivity"
+            android:name=".ui.activity.SystemMessageActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.activity.GoodsActivity"
-            android:screenOrientation="portrait" />
-
         <activity
             android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
             android:screenOrientation="portrait"
             android:theme="@style/ImagePickerThemeFullScreen" />
         <activity
-            android:name=".ui.activity.ConfirmOrderActivity"
+            android:name=".ui.activity.WebViewActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TransferActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SetCapitalPassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.UserOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialogstyle" />
 
-        <activity
-            android:name=".ui.activity.WashDemandActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name=".ui.activity.DistributionInfoActivity"
-            android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name=".ui.activity.ChangeInfoActivity"
-            android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.activity.PaySuceessActivity"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name=".ui.activity.InfoDetailActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.activity.GoodsListsActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.activity.TradeListsActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.activity.TradeDetaiActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name=".ui.activity.WebViewActivity"
+        <activity android:name=".ui.activity.PaymentTypeActivity"
             android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.BankPaymetActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.WxOrZfbPaymetActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.TraderUnpayActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.SafeCenterActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.PayActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.ImageBrowseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialogstyle"/>
+
+        <activity android:name=".ui.activity.TraderPaidActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.TraderAppealActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.TraderSuccActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.TraderCancelActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.TransactionDemandActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.TranscationReleaseBuyOrSellActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.PayFloatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialogstyle" />
+
     </application>
 
 </manifest>

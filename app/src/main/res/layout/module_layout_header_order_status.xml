@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_header_order_status"
+    android:layout_width="match_parent"
+    android:layout_height="250px"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_succ"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@mipmap/right2" />
+
+        <ImageView
+            android:id="@+id/img_appeal"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@mipmap/wait1" />
+
+        <ImageView
+            android:id="@+id/img_cancel"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@mipmap/close2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_order_succ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="交易成功"
+        android:textColor="@color/text_black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_order_appeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申诉处理中"
+        android:textColor="@color/text_black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_order_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="交易取消"
+        android:textColor="@color/text_black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

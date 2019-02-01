@@ -63,6 +63,7 @@
             android:layout_below="@+id/linear_sms"
             android:layout_marginTop="@dimen/view_space_edt_vertical"
             android:hint="@string/hint_input_pwd"
+            android:inputType="textPassword"
             android:maxLength="20"
             android:maxLines="1" />
 
@@ -74,6 +75,7 @@
             android:layout_below="@+id/edt_pwd"
             android:layout_marginTop="@dimen/view_space_edt_vertical"
             android:hint="@string/hint_confirm_pwd"
+            android:inputType="textPassword"
             android:maxLength="20"
             android:maxLines="1" />
 
@@ -130,19 +132,19 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/linear_agreement"
             android:layout_marginTop="@dimen/view_space_bottom_btn_above"
-            android:background="@drawable/btn_blue_bg_selector"
+            android:background="@drawable/btn_yellow_bg_selector"
             android:text="注册" />
 
 
         <TextView
             android:id="@+id/tv_existing"
             style="@style/style_href"
+            android:layout_marginTop="20px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/btn_register"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="40px"
-            android:padding="10px"
+
             android:text="@string/existing_account" />
 
     </RelativeLayout>

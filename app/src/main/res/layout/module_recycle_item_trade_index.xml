@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/module_include_gray_space" />
+
+    <RelativeLayout
+        style="@style/PaddinLeftRight"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/head" />
+
+        <TextView
+            android:id="@+id/tv_user_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17px"
+            android:layout_toRightOf="@+id/img_avatar"
+            android:text="用户名"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_sold_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_sold_rate_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5px"
+            android:layout_toLeftOf="@+id/tv_sold_rate"
+            android:text="成交率"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/vertical_divider"
+            android:layout_width="@dimen/divider_width"
+            android:layout_height="30px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_toLeftOf="@+id/tv_sold_rate_"
+            android:background="@color/text_gray" />
+
+        <TextView
+            android:id="@+id/tv_sold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_toLeftOf="@+id/vertical_divider"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5px"
+            android:layout_toLeftOf="@+id/tv_sold"
+            android:text="成交"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/module_include_divider" />
+
+    <RelativeLayout
+        style="@style/PaddinLeftRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40px">
+
+        <TextView
+            android:id="@+id/tv_total_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量："
+            android:textColor="@color/text_black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_total_"
+            android:layout_toEndOf="@+id/tv_total_"
+            android:layout_toRightOf="@+id/tv_total_"
+            android:text="300.00T"
+            android:textColor="@color/text_black"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_pay_type_bank_card"
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:layout_marginRight="10px"
+                android:src="@mipmap/icon_pay3" />
+
+            <ImageView
+                android:id="@+id/img_pay_type_alipay"
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:layout_marginRight="10px"
+                android:src="@mipmap/icon_pay2" />
+
+            <ImageView
+                android:id="@+id/img_pay_type_wechat"
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:src="@mipmap/icon_pay1" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pay_min_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_total_"
+            android:layout_marginTop="30px"
+            android:text="最小购买量："
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:paddingBottom="40px"/>
+
+        <TextView
+            android:id="@+id/tv_pay_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_pay_min_"
+            android:layout_toRightOf="@+id/tv_pay_min_"
+            android:text="1.00T"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_total_"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="50px"
+            android:paddingTop="30px"
+            android:paddingBottom="40px">
+
+            <TextView
+                android:id="@+id/tv_do_trade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去购买"
+                android:textColor="@color/primary_yellow"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:src="@mipmap/right4" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

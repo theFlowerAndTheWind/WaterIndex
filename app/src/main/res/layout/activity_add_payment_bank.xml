@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/module_include_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40px"
+        android:paddingVertical="30px"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_name"
+            style="@style/style_edt"
+            android:layout_marginBottom="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_input_payment_name" />
+
+        <EditText
+            android:id="@+id/edt_bank_name"
+            style="@style/style_edt"
+            android:layout_marginBottom="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_input_payment_bank_name" />
+        <EditText
+            android:id="@+id/edt_bank_branch_name"
+            style="@style/style_edt"
+            android:layout_marginBottom="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_input_payment_bank_branch_name" />
+        <EditText
+            android:id="@+id/edt_bank_number"
+            style="@style/style_edt"
+            android:layout_marginBottom="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/hint_input_payment_bank_number" />
+        <EditText
+            android:id="@+id/edt_capital_pass"
+            style="@style/style_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/hint_input_payment_capital_pass" />
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/style_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_agreement"
+            android:layout_marginTop="@dimen/view_space_bottom_btn_above"
+            android:background="@drawable/btn_yellow_bg_selector"
+            android:text="完成" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

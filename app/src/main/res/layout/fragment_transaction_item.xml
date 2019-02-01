@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30px"
+        android:paddingHorizontal="30px"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_transaction_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="需求编号：110123446534"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/tv_transaction_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15px"
+                android:textSize="14sp"
+                android:text="创建时间：2018-11-18 20:04:41"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_lower_shelf"
+            android:layout_width="150px"
+            android:layout_height="70px"
+            android:textSize="28px"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            style="@style/style_btn"
+            android:text="下架"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_ll"
+        android:paddingHorizontal="30px"
+        android:paddingBottom="30px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_txt_content_gray"
+                android:textSize="14sp"
+                android:text="需求："/>
+            <TextView
+                android:id="@+id/tv_transaction_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_txt_content_red"
+                android:textSize="14sp"
+                android:text="购买 "/>
+            <TextView
+                android:id="@+id/tv_complete_precent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="240.0T (已完成98.0T)"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_transaction_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:textSize="14sp"
+            style="@style/style_txt_content_gray"
+            android:text="最小交易量：10.0000T"/>
+        <TextView
+            android:id="@+id/tv_transaction_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:textSize="14sp"
+            style="@style/style_txt_content_gray"
+            android:text="状态：上架中"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_space_gray"
+        android:background="@color/divider_gray"/>
+</LinearLayout>

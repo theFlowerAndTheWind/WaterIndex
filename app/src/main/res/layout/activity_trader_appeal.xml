@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/module_include_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/module_layout_header_order_status" />
+
+            <include layout="@layout/module_include_gray_space" />
+
+            <include layout="@layout/module_item_trade_info"/>
+
+            <include layout="@layout/module_include_divider"/>
+
+            <include layout="@layout/module_layout_trade_info" />
+
+            <include layout="@layout/module_include_gray_space" />
+
+            <include layout="@layout/module_item_pay_info" />
+
+            <include layout="@layout/module_include_divider" />
+
+            <include layout="@layout/module_item_pay_type" />
+
+            <include layout="@layout/module_include_divider" />
+
+            <include layout="@layout/module_item_trader" />
+
+            <include layout="@layout/module_include_divider" />
+
+            <include layout="@layout/module_item_order_sn" />
+
+            <include layout="@layout/module_include_divider" />
+
+            <include layout="@layout/module_item_pay_code" />
+
+            <include layout="@layout/module_include_divider" />
+
+            <include layout="@layout/module_item_createtime" />
+
+            <include layout="@layout/module_include_divider" />
+
+            <include layout="@layout/module_item_paytime" />
+
+            <include layout="@layout/module_include_divider" />
+
+            <include layout="@layout/module_item_appealtime" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

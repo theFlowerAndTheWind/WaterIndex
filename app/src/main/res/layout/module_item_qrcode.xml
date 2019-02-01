@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--收款二维码-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_qrcode"
+    style="@style/PaddinLeftRight"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/commit_btn_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="收款二维码"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:src="@mipmap/qrcode"/>
+
+</LinearLayout>

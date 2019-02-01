@@ -74,7 +74,7 @@
         <LinearLayout
             android:id="@+id/ll_done"
             android:layout_width="match_parent"
-            android:layout_height="290px"
+            android:layout_height="wrap_content"
             android:layout_marginTop="40px"
             android:background="@drawable/gray_bg_shape"
             android:orientation="vertical"
@@ -105,7 +105,7 @@
 
             <TextView
                 android:id="@+id/tv_id_no"
-                style="@style/style_txt_content_gray"
+                style="@style/style_txt_content_green"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18px"

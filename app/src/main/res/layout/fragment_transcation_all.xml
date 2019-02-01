@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/bottom_btn_Rl">
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/transaction_demand_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+        <include layout="@layout/module_include_no_data"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_btn_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20px"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btn_release_transaction_sell"
+            style="@style/style_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_horizontal_margin"
+            android:background="@drawable/btn_yellow_bg_selector"
+            android:text="发布出售需求" />
+
+        <Button
+            android:id="@+id/btn_release_transaction_buy"
+            android:layout_below="@+id/btn_release_transaction_sell"
+            style="@style/style_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_horizontal_margin"
+            android:layout_marginTop="@dimen/layout_horizontal_margin"
+            android:background="@drawable/btn_gray_bg_selector"
+            android:text="发布购买需求" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

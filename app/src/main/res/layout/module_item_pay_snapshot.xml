@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--支付凭证-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_pay_snapshot"
+    style="@style/PaddinLeftRight"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/commit_btn_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="支付凭证"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/img_pay_snapshot"
+        android:layout_width="86px"
+        android:layout_height="60px"/>
+
+</LinearLayout>

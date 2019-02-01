@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/module_include_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:paddingHorizontal="30px"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/zfb_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingVertical="20px"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="35px"
+                        android:layout_height="35px"
+                        android:background="@drawable/zfb"/>
+
+                    <TextView
+                        android:id="@+id/paytype_zfb_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20px"
+                        android:textSize="28px"
+                        android:text="支付宝支付"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_alipay_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100px"
+                    android:paddingVertical="20px"
+                    android:text="编辑"
+                    android:textColor="@color/primary_yellow"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/zfh_account"
+                    android:layout_weight="1"
+                    android:paddingLeft="55px"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28px"
+                    android:text="mail@163.com"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/payment_switch_zfb_img"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/switch_off"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/module_include_gray_space"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:paddingHorizontal="30px"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/wx_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingVertical="20px"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="35px"
+                        android:layout_height="35px"
+                        android:background="@drawable/wx"/>
+
+                    <TextView
+                        android:id="@+id/paytype_wx_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20px"
+                        android:textSize="28px"
+                        android:text="微信支付"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_wxpay_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100px"
+                    android:paddingVertical="20px"
+                    android:text="编辑"
+                    android:textColor="@color/primary_yellow"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/wx_account"
+                    android:layout_weight="1"
+                    android:paddingLeft="55px"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28px"
+                    android:text="135 8897 2534"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/payment_switch_wx_img"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/switch_off"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/module_include_gray_space"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:paddingHorizontal="30px"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/bank_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingVertical="20px"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="35px"
+                        android:layout_height="35px"
+                        android:background="@drawable/bank_card"/>
+
+                    <TextView
+                        android:id="@+id/paytype_bank_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20px"
+                        android:textSize="28px"
+                        android:text="银行卡名称"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_bank_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100px"
+                    android:paddingVertical="20px"
+                    android:text="编辑"
+                    android:textColor="@color/primary_yellow"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_bankcard_username"
+                        android:paddingLeft="55px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="28px"
+                        android:visibility="gone"
+                        android:text="张三"/>
+
+                    <TextView
+                        android:id="@+id/tv_bankcard_number"
+                        android:paddingLeft="20px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="28px"
+                        android:visibility="gone"
+                        android:text="110123445468354"/>
+
+                    <TextView
+                        android:id="@+id/bank_account"
+                        android:paddingLeft="55px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="28px"
+                        android:text="张三  110123445468354"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/payment_switch_bank_img"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/switch_off"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/module_include_gray_space"/>
+
+</LinearLayout>

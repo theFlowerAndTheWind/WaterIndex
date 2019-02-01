@@ -9,8 +9,10 @@
     <include layout="@layout/module_include_title_bar" />
 
     <Button
+        android:id="@+id/btn_common_problem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:textSize="28px"
         android:paddingLeft="39px"
         android:paddingRight="32px"
@@ -36,8 +38,10 @@
         />
 
     <Button
+        android:id="@+id/btn_help"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:textSize="28px"
         android:paddingLeft="39px"
         android:paddingRight="32px"
@@ -48,6 +52,7 @@
         android:text="新手帮助"
         />
     <Button
+        android:id="@+id/btn_version"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="28px"
@@ -63,5 +68,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="172px"
-        android:src="@mipmap/logo2"/>
+        android:src="@mipmap/logo3"/>
 </LinearLayout>

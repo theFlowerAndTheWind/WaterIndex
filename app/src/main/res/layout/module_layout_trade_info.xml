@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ll_layout_trade_infp">
+    <include layout="@layout/module_item_rmb"/>
+    <include layout="@layout/module_include_divider"/>
+    <include layout="@layout/module_item_total"/>
+    <include layout="@layout/module_include_divider"/>
+    <include layout="@layout/module_item_price"/>
+
+</LinearLayout>

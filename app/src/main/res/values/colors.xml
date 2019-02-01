@@ -17,11 +17,15 @@
     <color name="actionsheet_gray">#8F8F8F</color>
     <color name="color_grey_normal">#FF666666</color>
     <color name="color_grey_press">#999999</color>
+    <color name="btn_color_grey_normal">#CAC3CA</color>
+    <color name="btn_color_grey_press">#999999</color>
 
+
+    <color name="trans_black">#FF5A5A5A</color>
     <color name="title_black">#2E222E</color>
     <color name="primary_yellow">#EEB35C</color>
 
-    <color name="btn_bg_yellow_selected">#EEB35C</color>
+    <color name="btn_bg_yellow_selected">#FFBC8B43</color>
     <color name="btn_bg_yellow">#ffeeb35c</color>
 
     <color name="tint_blue">#FFE6F4FD</color>
@@ -30,6 +34,8 @@
     <color name="divider_gray_bg">#E7E9F1</color>
     <color name="edittext_border_gray">#E7E9F1</color>
     <color name="text_gray">#888888</color>
+    <color name="text_gray_dialog">#9F9B9F</color>
+    <color name="text_red_dialog">#D93B3B</color>
     <color name="text_green">#FF289308</color>
     <color name="primary_red">#FFFF4C50</color>
     <color name="primary_dark_red">#FFC42F18</color>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WaterIndex</string>
+    <string name="app_name">节水指标</string>
 
     <string name="hint_input_mobile">请输入您的手机号</string>
     <string name="hint_input_security_code">请输入验证码</string>
@@ -18,10 +18,13 @@
 
     <string name="register">注册账号</string>
     <string name="forget">忘记密码</string>
-    <string name="agreement">《节水链平台用户协议》</string>
+    <string name="agreement">《节水指标平台用户协议》</string>
     <string name="existing_account">已有账号，前往登录</string>
 
-
+    <string name="key_edt_real_name">edt_real_name</string>
+    <string name="key_edt_id_card">edt_id_card</string>
+    <string name="key_btn_id_img_a">btn_id_img_a</string>
+    <string name="key_btn_id_img_b">btn_id_img_b</string>
 
     <string name="key_edt_name_mobile">edt_mobile</string>
     <string name="key_edt_name_pwd">edt_pwd</string>
@@ -33,12 +36,55 @@
     <string name="field_invitation">invitation</string>
     <string name="field_sms">sms</string>
 
+    <string name="key_edt_name_nike_name">edt_nike</string>
+
+    <string name="key_edt_capital_old_pwd">edt_change_capital_old_pwd</string>
+    <string name="key_edt_capital_pwd">edt_change_capital_pwd</string>
+    <string name="key_edt_change_new_pwd">key_edt_change_new_pwd</string>
+    <string name="key_edt_change_old_pwd">key_edt_change_old_pwd</string>
+
+    <string name="key_edt_pay_type_qrcode">key_edt_pay_type_name</string>
+    <string name="key_edt_pay_type_name">key_edt_pay_type_name</string>
+    <string name="key_edt_pay_type_account">key_edt_pay_type_account</string>
+    <string name="key_edt_pay_type_capital_pwd">key_edt_pay_type_capital_pwd</string>
+    <string name="key_edt_pay_type_bank_number">key_edt_pay_type_bank_number</string>
+    <string name="key_edt_pay_type_bank_deposit">key_edt_pay_type_bank_deposit</string>
+    <string name="key_edt_pay_type_bank_deposit_branch">key_edt_pay_type_bank_deposit_branch</string>
+
+    <string name="key_edt_release_time_limit">key_edt_release_time_limit</string>
+    <string name="key_edt_release_transaction_max">key_edt_release_transaction_max</string>
+    <string name="key_edt_release_transaction_min">key_edt_release_transaction_min</string>
+    <string name="key_edt_release_capital_pwd">key_edt_release_capital_pwd</string>
+
     <string name="hit_edt_mobile">请输入您的手机号</string>
     <string name="hit_edt_password">请输入密码</string>
+    <string name="hit_edt_transfer_amonut">划转数量</string>
+    <string name="hit_edt_transfer_amonut_pwd">资金密码</string>
+    <string name="hit_edt_transfer_max">交易数量</string>
+    <string name="hit_edt_transfer_min">最小交易量</string>
+    <string name="hit_edt_transfer_time_limit">付款时限 15-30</string>
+
     <string name="about">核心优势:依托节水试点+区块链创新基地试点企业双重试点，以线下核心节水项目为依托,(独家专业技术，节约水达95%）+区块链，助
         独家专业技术，节约水达95%）+区块链，助力全民节水。\n\n
         节水链-即将开启实体区块链金融创新新模式，它是开拓者也将是引领者！需要您和我们一起开创新的世界。\n\n
         核心优势:依托节水试点+区块链创新基地试点企业双重试点，以线下核心节水项目为依托,(独家专业技术，节约水达95%）+区块链，助
         独家专业技术，节约水达95%）+区块链，助力全民节水。
     </string>
+    <string name="hint_input_capital_old_pwd">原资金密码</string>
+    <string name="hint_input_capital_pwd">设置资金密码</string>
+    <string name="hint_input_capital_new_pwd">设置新资金密码</string>
+    <string name="hint_input_capital_confirm_pwd">确认资金密码</string>
+    <string name="hint_input_payment_name">请输入姓名</string>
+    <string name="hint_input_payment_bank_name">请输入开户银行</string>
+    <string name="hint_input_payment_bank_branch_name">请输入开户银行支行（选填）</string>
+    <string name="hint_input_payment_bank_number">请输入银行卡号</string>
+    <string name="hint_input_payment_capital_pass">请输入资金密码</string>
+    <string name="hint_input_payment_zfb_account">请输入支付宝账号</string>
+    <string name="hint_input_payment_wx_account">请输入微信账号</string>
+    <string name="hint_upload_payment_zfb_img">请上传您的支付宝收款二维码图片</string>
+    <string name="hint_upload_payment_wx_img">请上传您的微信收款二维码图片</string>
+    <string name="rationale_camera">本应用程序需要使用你的相机，这样你就可以拍照了或者扫描二维码</string>
+    <string name="rationale_storage">本应用程序需要读取和写入存储，这样你就可以选择本地文件了</string>
+    <string name="rationale_ask_again">没有该权限，此应用程序可能无法正常工作。打开应用程序设置来修改应用程序权限。</string>
+    <string name="appeal_warning">提起申诉后，资产将会冻结。申诉专员将介入本次交易，直至申诉结束。</string>
 </resources>

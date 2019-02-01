@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/module_include_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:paddingVertical="10px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingHorizontal="30px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:paddingVertical="20px"
+                    android:textSize="30px"
+                    android:textStyle="bold"
+                    android:text="交易价格"/>
+
+                <TextView
+                    android:id="@+id/transaction_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100px"
+                    android:paddingVertical="20px"
+                    android:textStyle="bold"
+                    android:textSize="30px"
+                    android:text="3.0元/T"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="30px"
+                android:layout_marginBottom="20px">
+
+                <EditText
+                    android:id="@+id/edt_transfer_max"
+                    style="@style/style_edt"
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hit_edt_transfer_max"
+                    android:maxLength="11"
+                    android:inputType="number"/>
+                <TextView
+                    android:id="@+id/tv_transfer_max_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:paddingHorizontal="20px"
+                    android:gravity="center"
+                    android:textColor="@color/hit_color"
+                    android:text="T"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="30px"
+                android:layout_marginBottom="20px">
+
+                <EditText
+                    android:id="@+id/edt_transfer_min"
+                    style="@style/style_edt"
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hit_edt_transfer_min"
+                    android:maxLength="11"
+                    android:inputType="number"/>
+                <TextView
+                    android:id="@+id/tv_transfer_min_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:paddingHorizontal="20px"
+                    android:gravity="center"
+                    android:textColor="@color/hit_color"
+                    android:text="T"/>
+
+            </FrameLayout>
+            <!--产品要求取消-->
+            <!--<FrameLayout-->
+                <!--android:id="@+id/time_limit_fl"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingHorizontal="30px"-->
+                <!--android:layout_marginBottom="20px">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edt_transfer_time_limit"-->
+                    <!--style="@style/style_edt"-->
+                    <!--android:gravity="center|left"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="@string/hit_edt_transfer_time_limit"-->
+                    <!--android:maxLength="2"-->
+                    <!--android:inputType="number"/>-->
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_transfer_time_limit"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:paddingHorizontal="20px"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textColor="@color/hit_color"-->
+                    <!--android:text="分钟"/>-->
+
+            <!--</FrameLayout>-->
+
+            <LinearLayout
+                android:id="@+id/ll_pay_cate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="20px"
+                    android:paddingHorizontal="30px"
+                    android:textStyle="bold"
+                    android:textSize="30px"
+                    android:text="收款方式"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="@color/divider_gray"/>
+
+                <LinearLayout
+                    android:id="@+id/bank_ll"
+                    android:paddingHorizontal="30px"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingVertical="20px"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="35px"
+                            android:layout_height="35px"
+                            android:background="@drawable/bank_card"/>
+
+                        <TextView
+                            android:id="@+id/paytype_bank_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="20px"
+                            android:gravity="center|left"
+                            android:textSize="28px"
+                            android:text="银行卡"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_bank_state"
+                        android:layout_width="35px"
+                        android:layout_height="24px"
+                        android:paddingLeft="100px"
+                        android:visibility="gone"
+                        android:background="@mipmap/right1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="@color/divider_gray"/>
+
+                <LinearLayout
+                    android:id="@+id/zfb_ll"
+                    android:paddingHorizontal="30px"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingVertical="20px"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="35px"
+                            android:layout_height="35px"
+                            android:background="@drawable/zfb"/>
+
+                        <TextView
+                            android:id="@+id/paytype_zfb_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|left"
+                            android:paddingLeft="20px"
+                            android:textSize="28px"
+                            android:text="支付宝支付"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_alipay_state"
+                        android:layout_width="35px"
+                        android:layout_height="24px"
+                        android:paddingLeft="100px"
+                        android:background="@mipmap/right1"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:background="@color/divider_gray"/>
+
+                <LinearLayout
+                    android:id="@+id/wx_ll"
+                    android:paddingHorizontal="30px"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingVertical="20px"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="35px"
+                            android:layout_height="35px"
+                            android:background="@drawable/wx"/>
+
+                        <TextView
+                            android:id="@+id/paytype_wx_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|left"
+                            android:paddingLeft="20px"
+                            android:textSize="28px"
+                            android:text="微信支付"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_wxpay_state"
+                        android:layout_width="35px"
+                        android:layout_height="24px"
+                        android:paddingLeft="100px"
+                        android:background="@mipmap/right1"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="30px"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edt_transfer_amonut_pwd"
+                    style="@style/style_edt"
+                    android:paddingHorizontal="20px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/transfer_amonut_ll"
+                    android:layout_marginTop="20px"
+                    android:hint="@string/hit_edt_transfer_amonut_pwd"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:maxLines="1" />
+
+                <Button
+                    android:id="@+id/btn_transaction_buy"
+                    style="@style/style_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_transfer_amonut_pwd"
+                    android:layout_marginTop="@dimen/view_space_title_bar_bottom"
+                    android:text="发布" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

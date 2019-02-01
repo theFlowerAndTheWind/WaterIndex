@@ -14,7 +14,7 @@
             style="@style/PaddinLeftRight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="51px"
+            android:paddingTop="40px"
             android:paddingBottom="40px">
 
             <ImageView
@@ -124,7 +124,7 @@
             android:background="@color/divider_gray" />
 
         <RelativeLayout
-            android:id="@+id/relative_trade_lists"
+            android:id="@+id/relative_payment_type"
             style="@style/PaddinLeftRight"
             android:layout_width="match_parent"
             android:layout_height="@dimen/commit_btn_height">
@@ -137,7 +137,7 @@
                 android:src="@mipmap/clock" />
 
             <TextView
-                android:id="@+id/tv_trade_lists"
+                android:id="@+id/tv_payment_type"
                 style="@style/style_txt_confirm_order1"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/img3"
@@ -160,7 +160,7 @@
             android:background="@color/divider_gray" />
 
         <RelativeLayout
-            android:id="@+id/relative_order_lists"
+            android:id="@+id/relative_transaction_demand"
             style="@style/PaddinLeftRight"
             android:layout_width="match_parent"
             android:layout_height="@dimen/commit_btn_height">
@@ -173,7 +173,7 @@
                 android:src="@mipmap/drop" />
 
             <TextView
-                android:id="@+id/tv_order_lists"
+                android:id="@+id/tv_transaction_demand"
                 style="@style/style_txt_confirm_order1"
                 android:layout_centerVertical="true"
                 android:paddingLeft="26px"
@@ -198,7 +198,7 @@
             android:background="@color/divider_gray" />
 
         <RelativeLayout
-            android:id="@+id/relative_change_pass"
+            android:id="@+id/relative_safe_center"
             style="@style/PaddinLeftRight"
             android:layout_width="match_parent"
             android:layout_height="@dimen/commit_btn_height">
@@ -211,7 +211,7 @@
                 android:src="@mipmap/umbrella" />
 
             <TextView
-                android:id="@+id/tv_change_pass"
+                android:id="@+id/tv_safe_center"
                 style="@style/style_txt_confirm_order1"
                 android:layout_centerVertical="true"
                 android:paddingLeft="26px"

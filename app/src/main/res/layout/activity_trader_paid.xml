@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/module_include_title_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginBottom="@dimen/commit_btn_height">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/module_layout_header_rmb" />
+
+                <LinearLayout
+                    android:id="@+id/ll_trade_info_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/module_item_trade_info" />
+
+                    <include layout="@layout/module_include_divider" />
+
+                    <include layout="@layout/module_layout_trade_info" />
+                </LinearLayout>
+
+                <include layout="@layout/module_include_gray_space" />
+
+                <include layout="@layout/module_item_pay_info" />
+
+                <include layout="@layout/module_include_divider" />
+
+                <include layout="@layout/module_item_pay_type" />
+
+                <include layout="@layout/module_include_divider" />
+
+                <include layout="@layout/module_item_user_name" />
+
+                <include layout="@layout/module_include_divider" />
+
+                <include layout="@layout/module_item_account_name" />
+
+                <include layout="@layout/module_include_divider" />
+
+                <include layout="@layout/module_item_qrcode" />
+
+                <include layout="@layout/module_item_bank_info" />
+
+                <include layout="@layout/module_include_divider" />
+
+                <include layout="@layout/module_item_pay_code" />
+
+                <include layout="@layout/module_include_divider" />
+
+                <include layout="@layout/module_item_createtime" />
+
+                <include layout="@layout/module_include_divider" />
+
+                <include layout="@layout/module_item_paytime" />
+
+                <LinearLayout
+                    android:id="@+id/ll_seller_part"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/module_item_trader" />
+
+                    <include layout="@layout/module_include_divider" />
+
+                    <include layout="@layout/module_item_pay_snapshot" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+                    android:background="@color/space_gray" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_buyer_appeal"
+            style="@style/style_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/commit_btn_height"
+            android:layout_gravity="bottom"
+            android:text="未收到，提交申诉" />
+
+        <LinearLayout
+            android:id="@+id/ll_btns_seller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_seller_appeal"
+                android:layout_width="0px"
+                android:layout_height="@dimen/commit_btn_height"
+                android:layout_weight="1"
+                android:background="@drawable/alertdialog_left_selector"
+                android:text="未收到款项，去申诉"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_commit" />
+
+            <Button
+                android:id="@+id/btn_seller_checkout"
+                style="@style/style_btn_no_coner"
+                android:layout_width="0px"
+                android:layout_height="@dimen/commit_btn_height"
+                android:layout_weight="1"
+                android:text="确认收款并放行" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
